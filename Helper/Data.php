@@ -41,6 +41,11 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         return $this->scopeConfig->getValue('thai_s3/custom_endpoint/enabled');
     }
 
+    public function getPathStyleEnabled()
+    {
+        return $this->scopeConfig->getValue('thai_s3/custom_endpoint/path_style_enabled');
+    }
+
     public function getEndpoint()
     {
         return $this->scopeConfig->getValue('thai_s3/custom_endpoint/endpoint');

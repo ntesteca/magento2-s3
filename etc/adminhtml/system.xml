@@ -30,13 +30,17 @@
                     <label>Enable</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="endpoint" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="path_style_enabled" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Path Style</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="endpoint" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>URL</label>
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
                 </field>
-                <field id="region" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="region" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Region</label>
                     <comment>This overrides the Region setting you've selected in the General group.</comment>
                     <depends>
